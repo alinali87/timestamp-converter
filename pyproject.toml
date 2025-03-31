@@ -1,6 +1,6 @@
 [project]
 name = "timestamp-converter"
-version = "0.1.0"
+version = "0.1.1"
 description = "A package that converts Unix timestamps to ISO formatted timestamps."
 authors = [
     {name = "Alina Li",email = "alinali87@gmail.com"}
