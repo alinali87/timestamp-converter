@@ -1,16 +1,16 @@
 .PHONY: run test install build publish
 
 run:
-	poetry run python src/timestamp_converter/converter.py
+	uv run python src/timestamp_converter/converter.py
 
 test:
-	poetry run pytest
+	uv run pytest
 
 install:
-	poetry install
+	uv sync
 
 build:
-	poetry build
+	uv build
 
 publish:
-	poetry publish -r test-pypi
+	uv publish --index test-pypi
