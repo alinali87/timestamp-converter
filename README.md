@@ -8,9 +8,9 @@ A simple Python package that converts a Unix timestamp to an ISO formatted times
    git clone https://github.com/alinali87/timestamp-converter.git
    cd timestamp-converter 
 ```
-2. Install the package using poetry
+2. Install the package using uv
 ```bash
-poetry install
+uv sync
 ```
 3. Use it
 ```python
@@ -22,11 +22,11 @@ print(is_unixtimestamp(1609459200))    # Output: True
 ```
 
 ## Development
-This project uses Poetry and a Makefile to streamline common tasks.
+This project uses uv and a Makefile to streamline common tasks.
 
-Activate virtual environment  # TODO: check alternative command, this one doesn't work
+Activate virtual environment
 ```bash
-poetry shell
+source .venv/bin/activate
 ```
 Run code:
 ```bash
@@ -50,13 +50,13 @@ make publish
 ```
 Add a dependency
 ```bash
-poetry add <package_name>
+uv add <package_name>
 ```
 Add a dev dependency
 ```bash
-poetry add -D <package-name>
+uv add --dev <package-name>
 ```
 Remove a dependency
 ```bash
-poetry remove --dev <package-name>
+uv remove <package-name>
 ```
